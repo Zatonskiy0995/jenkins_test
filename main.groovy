@@ -13,6 +13,7 @@ node {
           // Проверка окружения ls -la
         sh 'ls -la'
         sh 'git --version'
+        sh 'echo $PATH'
         sh 'ansible --version'
         
       }
