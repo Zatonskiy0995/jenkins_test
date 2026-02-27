@@ -5,6 +5,7 @@ node {
         
         // Проверка окружения
         sh 'env'
+        sh 'ansible --version'
     }
     
     stage('Cleanup') {
