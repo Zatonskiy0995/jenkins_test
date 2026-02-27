@@ -16,3 +16,16 @@ sudo chown -R 1000:1000 /root/jenkins_home
 # user
 Vasja
 p1pFklYMZWAeXSbrAEx5
+
+# проверка прав 
+import hudson.model.User
+import hudson.model.Hudson
+
+User currentUser = User.current()
+boolean isAdmin = currentUser.hasPermission(Hudson.ADMINISTER)
+
+if(isAdmin) {
+      println("Пользователь обладает правами администратора.")
+} else {
+      println("Пользователь не является администратором.")
+}
