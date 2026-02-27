@@ -15,7 +15,7 @@ pipeline {
           }
           stage('Выполнение задачи') {
             steps {
-                sh 'ssh ${params.USER_SERVER}@${params.IP_SERVER}'
+                sh "ssh ${params.USER_SERVER}@${params.IP_SERVER}"
               }
           }
           stage('Cleanup') {
