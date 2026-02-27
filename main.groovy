@@ -12,6 +12,9 @@ node {
           
           // Проверка окружения ls -la
         sh 'ls -la'
+        sh 'git --version'
+        sh 'ansible --version'
+        
       }
       
       stage('Cleanup') {
