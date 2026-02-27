@@ -11,3 +11,8 @@ docker run -d \
            jenkins/jenkins:lts
 #выдача прав Jenkins на директорию 
 sudo chown -R 1000:1000 /root/jenkins_home
+
+
+# user
+Vasja
+p1pFklYMZWAeXSbrAEx5
