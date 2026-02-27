@@ -6,6 +6,13 @@ node {
           // Проверка окружения
           sh 'env'
       }
+      stage('ls -la') {
+          // Простое эхо-командование
+          echo 'Проверяем пространство Jenkins'
+          
+          // Проверка окружения ls -la
+        sh 'ls -la'
+      }
       
       stage('Cleanup') {
           cleanWs()
