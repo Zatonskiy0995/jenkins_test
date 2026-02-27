@@ -2,6 +2,7 @@
 
 # Создаем отдельную директорию для хранения конфигурации Jenkins
 mkdir ~/jenkins_home
+# выдача прав Jenkins на директорию 
 sudo chown -R 1000:1000 /root/jenkins_home
 
 # Запускаем контейнер Jenkins
@@ -18,15 +19,11 @@ docker run -d \
              -v ~/jenkins_home:/var/jenkins_home \
              jenkins/jenkins:lts
 
-# выдача прав Jenkins на директорию 
-sudo chown -R 1000:1000 /root/jenkins_home
-
-
 # user
 Vasja
 p1pFklYMZWAeXSbrAEx5
 
-# проверка прав 
+# проверка прав администратора 
 import hudson.model.User
 import hudson.model.Hudson
 
