@@ -35,3 +35,7 @@ if(isAdmin) {
 } else {
       println("Пользователь не является администратором.")
 }
+# Запускаем контейнер Nginx
+docker run -d \
+           -p 80:80 \
+           ngnix
