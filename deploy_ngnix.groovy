@@ -16,6 +16,9 @@ pipeline {
           stage('Выполнение задачи') {
             steps {
                 sh "ssh ${params.USER_SERVER}@${params.IP_SERVER}"
+                sh "docker exec -it ${params.DOCKER_CONTAINER} /bin/bash"
+                //sh "cp "
+
               }
           }
           stage('Cleanup') {
